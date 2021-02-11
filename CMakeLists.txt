@@ -7,7 +7,8 @@ project(dht22-pico)
 pico_sdk_init()
 
 add_executable(dht22-pico
-        dht22-pico.c
+        src/dht22-pico.c
+        src/main.c
         )
 
 pico_enable_stdio_usb(dht22-pico 1)
